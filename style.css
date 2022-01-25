@@ -30,30 +30,28 @@
 
 .h-container{
     height: 11vw;
-    background-color: chartreuse;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem calc(8vw - 2%);
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
     .h-container{
-        height: 62vw;
+        height: 70vw;
         flex-direction: column;
-        background-color: cadetblue;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 
 .h-box-title{
     width: calc(46vw + 2%);
-    background-color: darkgoldenrod;
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
     .h-box-title{
         width: calc(80vw + 2%);
-        background-color: rgb(70, 45, 156);
     }
 }
 
@@ -63,13 +61,12 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 320px){
+@media (max-width: 480px){
     .h-title{
         text-align: center;
         font-size: calc(10vw + 10%);
     }
 }
-
 
 .h-nav{
     width: calc(46vw - 2%);
@@ -78,7 +75,6 @@
 }
 
 .h-container-list{
-    background-color: green;
     width: calc(35vw - 2%);
     display: flex;
     justify-content: space-between;
@@ -87,16 +83,9 @@
 
 @media (max-width: 480px){
     .h-container-list{
-        width: calc(45vw - 2%);
-        background-color: rgb(115, 199, 18);
-    }
-}
-
-@media (max-width: 320px){
-    .h-container-list{
+        width: calc(50vw - 2%);
         height: 40vw;
         flex-direction: column;
-        background-color: rgb(115, 199, 18);
     }
 }
 
@@ -110,26 +99,16 @@
 @media (max-width: 780px){
     .h-list-item{
         font-size: calc(3vw - 10%);
-        background-color: cadetblue;
     }
 }
 
 @media (max-width: 480px){
     .h-list-item{
-        font-size: calc(4vw - 10%);
-        background-color: rgb(115, 199, 18);
-    }
-}
-
-@media (max-width: 320px){
-    .h-list-item{
         font-size: calc(8vw - 10%);
-        background-color: rgb(115, 199, 18);
     }
 }
 
 .m-container-top{
-    background-color: rgb(194, 69, 131);
     height: 55vw;
     display: flex;
     justify-content: space-around;
@@ -138,20 +117,17 @@
 
 @media (max-width: 480px){
     .m-container-top{
-        height: 90vw;
+        height: 110vw;
         flex-direction: column-reverse;
-        background-color: rgb(197, 187, 45);
     }
 }
 
 .m-box-img{
-    background-color: brown;
     width: 45vw;
 }
 
 @media (max-width: 480px){
     .m-box-img{
-        background-color: cadetblue;
         width: 65vw;
     }
 }
@@ -174,23 +150,18 @@
 
 @media (max-width: 480px){
     .m-top-text h2{
-        background-color: cornflowerblue;
         width: calc(85vw - 10%);
         font-size: calc(10vw - 10%);
     }
 }
 
-
-
 .m-container-below{
     height: 75vw;
-    background-color: chocolate;
 }
 
 @media (max-width: 480px){
     .m-container-below{
-        height: 120vw;
-        background-color: cornflowerblue;
+        height: 180vw;
     }
 }
 
@@ -204,8 +175,7 @@
 
 @media (max-width: 480px){
     .m-box{
-        height: 120vw;
-        background-color: cornflowerblue;
+        height: 140vw;
     }
 }
 
@@ -216,7 +186,6 @@
 @media (max-width: 480px){
     .m-input-title{
         font-size: calc(10vw);
-        background-color: cornflowerblue;
     }
 }
 
@@ -230,9 +199,9 @@
 
 @media (max-width: 480px){
     .m-box-form{
+        justify-content: space-around;
         height: calc(80vw - 5% );
         flex-direction: column;
-        background-color: lightcoral;
     }
 }
 
@@ -245,8 +214,18 @@
     justify-content: space-around;
 }
 
+@media (max-width: 480px){
+    .m-form{
+        width: 87vw;
+        height: 68vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
 .m-input{
-    background-color: #FFFFFF;
     width: 40vw;
     height: 6vw;
     border: 3px solid #6C63FF;
@@ -263,6 +242,15 @@
     }
 }
 
+@media (max-width: 480px){
+    .m-input{
+        width: 86vw;
+        height: 18vw;
+        border: 3px solid #6C63FF;
+        font-size: calc(6vw - 10%);
+    }
+}
+
 .m-input::placeholder{
     color: #000000;
 }
@@ -276,20 +264,22 @@
     justify-content: center;
     align-items: center;
     padding: calc(0.5rem + 1%);
-    
+}
+
+@media (max-width: 480px){
+    .m-box-text{
+       display: none;
+    }
 }
 
 /* função clamp não tá rodando, verificar isso*/
 .m-text{
-    background-color: chartreuse;
     font-size: calc(2.1vw - 10%);
-
 }
 
 @media (max-width: 480px){
     .m-text{
-        background-color: crimson;
-        font-size: calc(2.3vw - 12%);
+        display: none;
     }
 }
 
@@ -303,12 +293,27 @@
     cursor: pointer;
 }
 
+@media (max-width: 480px){
+    .m-btn-input{
+    width: 70vw;
+    height: 18vw;
+    font-size: calc(10vw - 5%);
+    }
+}
+
 .f-container{
     height: 30vw;
     background-color: #6C63FF;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+@media (max-width: 480px){
+    .f-container{
+    height: 80vw;
+    flex-direction: column-reverse;
+    }
 }
 
 .f-list{
@@ -318,6 +323,12 @@
     align-items: center;
 }
 
+@media (max-width: 480px){
+    .f-list{
+        text-align: center;
+    }
+}
+
 .f-list-item{
     width: 40vw;
     height: 4.5vw;
@@ -325,10 +336,22 @@
     color: #000000;
 }
 
+@media (max-width: 480px){
+    .f-list-item{
+        width: 80vw;
+        height: 12vw;
+        font-size: 7vw;
+    }
+}
+
 .f-title{
     font-size: 5vw;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-
+@media (max-width: 480px){
+    .f-title{
+        text-align: center;
+        font-size: 13vw;
+    }
+}
